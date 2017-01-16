@@ -1,7 +1,7 @@
 $(function(){
     // メタタグチェック
     var robots = $("meta[name=robots]").attr("content");
-    console.log(robots);
+
     if(robots === undefined) {
         robots = "";
     }
