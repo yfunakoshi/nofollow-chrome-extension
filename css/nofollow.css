@@ -3,9 +3,10 @@
 }
 
 #chrome_nofollow_notify {
+  font-family: Arial, Helvetica, sans-serif;
   position: fixed;
-  bottom: 10px;
-  right: 5%;
+  bottom: 2%;
+  right: 2%;
   font-size: 13px;
   color: #ccc;
   cursor: default;
@@ -19,6 +20,7 @@
   border-radius:5px;
   border: 1px solid #999;
   margin: 0px;
+  opacity: 0.9;
 }
 .chrome-nofollow-text-false {
   color: aqua;
