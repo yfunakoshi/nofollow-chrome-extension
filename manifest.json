@@ -13,7 +13,7 @@
       "19": "images/icon/icon_19.png",
       "38": "images/icon/icon_38.png"
     },
-    "default_title": "Nofollow",
+    "default_title": "Nofollow Settings",
     "default_popup": "popup.html"
   },
   "content_scripts": [
@@ -24,7 +24,7 @@
         "http://*/*",
         "https://*/*"
       ],
-      "css": ["css/nofollow.css"],
+      "css": ["css/icomoon.css", "css/nofollow.css"],
       "js": ["js/jquery-2.2.4.min.js", "js/nofollow.js"]
     }
   ],

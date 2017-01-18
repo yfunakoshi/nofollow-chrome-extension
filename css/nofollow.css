@@ -1,8 +1,9 @@
+
 .chrome-nofollow-link {
   border: 2px red dotted;
 }
 
-#chrome_nofollow_notify {
+#chrome-nofollow-notify {
   font-family: Arial, Helvetica, sans-serif;
   position: fixed;
   bottom: 2%;
@@ -10,11 +11,11 @@
   font-size: 13px;
   color: #ccc;
   cursor: default;
-  z-index: 9999;
+  z-index: 9998;
   line-height: 1.4;
   vertical-align: baseline;
   background: #222;
-  padding: 5px;
+  padding: 5px 10px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   border-radius:5px;
@@ -29,4 +30,27 @@
 .chrome-nofollow-text-true {
   font-weight: 400;
   color: red;
+}
+
+#chrome-nofollow-title-area {
+  margin: 5px 0;
+  padding: 0;
+  border-bottom: 1px solid #666;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+.chrome-nofollow-title {
+  font-size: 1.1em;
+  font-weight:400;
+}
+.chrome-nofollow-icon {
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.icon-minus {
+  right: 8%;
+  position: absolute;
 }
