@@ -1,34 +1,25 @@
 {
   "manifest_version": 2,
-  "name": "nofollow",
-  "description": "NoIndexとかNoFollowタグを検知するやつ",
-  "version": "0.2",
+  "name": "SEOTagViewer",
+  "description": "robots.txtの確認および、ページ内にあるNoIndex、NoFollow、Canonicalなどを検知して表示する",
+  "version": "0.1",
   "icons": {
     "16": "images/icon/icon_16.png",
     "48": "images/icon/icon_48.png",
     "128": "images/icon/icon_128.png"
   },
-  "browser_action": {
-    "default_icon": {
-      "19": "images/icon/icon_19.png",
-      "38": "images/icon/icon_38.png"
-    },
-    "default_title": "Nofollow Settings",
-    "default_popup": "popup.html"
-  },
   "content_scripts": [
     {
-      "all_frames": false,
-      "run_at": "document_end",
       "matches": [
         "http://*/*",
         "https://*/*"
       ],
-      "css": ["css/icomoon.css", "css/nofollow.css"],
-      "js": ["js/jquery-2.2.4.min.js", "js/nofollow.js"]
+      "css": ["css/style.css"],
+      "js": ["js/jquery-2.2.4.min.js", "js/js.cookie.js", "js/action.js"]
     }
   ],
   "permissions": [
+    "tabs",
     "https://*/*",
     "http://*/*",
     "storage"
