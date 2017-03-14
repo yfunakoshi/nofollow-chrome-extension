@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SEOTagViewer Options</title>
+  <style>
+    body: { padding: 10px; }
+    .message {
+      padding: 5px;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+  <h2>Choose check items:</h2>
+  <div class="message">
+    404 error will be displayed in the Console tab, if robots.txt does not exist.<br>
+    robots.txtが設置されていない場合は、コンソールに404エラーが表示されます。
+  </div>
+  <input type="checkbox" id="robots">Disallow (robots.txt)<br>
+  <input type="checkbox" id="Canonical">Canonical<br>
+  <input type="checkbox" id="Noindex">Noindex<br>
+  <input type="checkbox" id="Nofollow">Nofollow<br>
+  <input type="checkbox" id="None">None<br>
+  <input type="checkbox" id="NoArchive">NoArchive<br>
+  <input type="checkbox" id="NoSnippet">NoSnippet<br>
+  <input type="checkbox" id="NoImageIndex">NoImageIndex<br>
+  <br>
+  <button id="save">Save</button>
+  <div id="status"></div>
+  <script src="./js/options.js"></script>
+</body>
+</html>

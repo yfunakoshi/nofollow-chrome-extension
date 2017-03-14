@@ -27,7 +27,7 @@
     text-align: left !important;
 }
 #chrome_nofollow_notify.chrome-nofollow-box-open {
-    color: #ccc;
+    color: #ccc !important;
     overflow: visible;
     width: auto;
     height: auto;
