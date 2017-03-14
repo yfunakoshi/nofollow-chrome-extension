@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "SEOTagViewer",
-  "description": "robots.txtの確認および、ページ内にあるNoIndex、NoFollow、Canonicalなどを検知して表示する",
+  "description": "This extension will read robots.txt and detect NoIndex, Canonical and so on in this page.（robots.txtの確認および、ページ内にあるNoIndex、NoFollow、Canonicalなどを検知して表示します）",
   "version": "0.1.1",
   "icons": {
     "16": "images/icon/icon_16.png",

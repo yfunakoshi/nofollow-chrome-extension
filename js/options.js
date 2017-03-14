@@ -22,10 +22,10 @@ function restore_options() {
         , Canonical   : true
         , Noindex     : true
         , Nofollow    : true
-        , None        : true
-        , NoArchive   : true
-        , NoSnippet   : true
-        , NoImageIndex: true
+        , None        : false
+        , NoArchive   : false
+        , NoSnippet   : false
+        , NoImageIndex: false
     }, function(items) {
         document.getElementById('robots').checked       = items.robots;
         document.getElementById('Canonical').checked    = items.Canonical;
