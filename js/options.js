@@ -8,6 +8,7 @@ function save_options() {
         , NoArchive   : document.getElementById('NoArchive').checked
         , NoSnippet   : document.getElementById('NoSnippet').checked
         , NoImageIndex: document.getElementById('NoImageIndex').checked
+        , AMP: document.getElementById('AMP').checked
     }, function() {
         var status = document.getElementById('status');
         status.textContent = 'Options saved.';
@@ -26,6 +27,7 @@ function restore_options() {
         , NoArchive   : false
         , NoSnippet   : false
         , NoImageIndex: false
+        , AMP: false
     }, function(items) {
         document.getElementById('robots').checked       = items.robots;
         document.getElementById('Canonical').checked    = items.Canonical;
@@ -35,6 +37,7 @@ function restore_options() {
         document.getElementById('NoArchive').checked    = items.NoArchive;
         document.getElementById('NoSnippet').checked    = items.NoSnippet;
         document.getElementById('NoImageIndex').checked = items.NoImageIndex;
+        document.getElementById('AMP').checked = items.AMP;
     });
 }
 document.addEventListener('DOMContentLoaded', restore_options);

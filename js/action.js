@@ -11,6 +11,7 @@ $(function() {
         , NoArchive    : true
         , NoSnippet    : true
         , NoImageIndex : true
+        , AMP : true
         , TagViewerDisp: true
     }, function(items) {
 
@@ -22,6 +23,7 @@ $(function() {
         var showNoArchive    = items.NoArchive;
         var showNoSnippet    = items.NoSnippet;
         var showNoImageIndex = items.NoImageIndex;
+        var showAMP = items.AMP;
         var flgTagViewer     = items.TagViewerDisp;
 
         if ( showRobots ) {
@@ -56,7 +58,19 @@ $(function() {
                     disp_flg = 1;
                 }
             }
-
+            if ( showAMP ) {
+                var amp = $("link[rel=amphtml]").attr("href");
+                var href = window.location.href;
+                var ampEx = "" ;
+                if( amp === undefined ) {
+                    ampEx = "false";
+                    ampHtml = "false";
+                } else {
+                    ampEx = "exsist";
+                    ampHtml ="<a href='"+ amp + "' target='_blank'>" + amp + "</a>";
+                    disp_flg = 1;
+                }
+            }
             var noindex = noarchive = nosnippet = noimageindex = none = nofollow = "false";
             if ( showNoindex || showNoArchive || showNoSnippet || showNoImageIndex || showNone || showNofollow ) {
                 $("meta[name=robots]").each(function(){
@@ -113,6 +127,9 @@ $(function() {
                 }
                 if ( showNoImageIndex ) {
                     res += 'NoImageIndex: <span class="chrome-nofollow-text-' + noimageindex + '">' + noimageindex + '</span><br>';
+                }
+                if ( showAMP ) {
+                    res += 'AMP: <span class="chrome-amp-' + ampEx + '">' + ampHtml + '</span><br>';
                 }
                 var content = $("<div></div>", {
                     "id": "chrome_nofollow_notify",

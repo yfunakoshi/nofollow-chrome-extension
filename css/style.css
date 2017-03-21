@@ -39,13 +39,15 @@
     font-weight: 400;
     color: red;
 }
-.chrome-canonical-false {
+.chrome-canonical-false,
+.chrome-amp-false {
     color: grey;
 }
 .chrome-canonical-same {
     color: #CCC;
 }
-.chrome-canonical-exsist {
+.chrome-canonical-exsist,
+.chrome-amp-exsist  {
     display: inline-block;
     white-space: nowrap;
     vertical-align: middle;
